@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int m;
+    printf("enter m ");
+    scanf("%d", &m);
+
+    int a = 1, b = 1; 
+    int s = 0;
+
+    while (a <= m) {
+        s += a;       
+        int q = a + b; 
+        a = b;         
+        b = q;    
+    }
+
+    printf("Сумма чисел Фибоначчи%d, %d\n", m, s);
+
+    return 0;
+}
