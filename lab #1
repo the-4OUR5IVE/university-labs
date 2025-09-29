@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    printf("с циклом while:\n");
+    int i = 100;
+    while (i <= 999) {
+        a = i / 100;      
+        b = (i / 10) % 10; 
+        c = i % 10;      
+
+        if (a == b || a == c || b == c) {
+            printf("%d ", i);
+        }
+        i++;
+    }
+
+    printf("\n\nс циклом do-while:\n");
+    i = 100;
+    do {
+        a = i / 100;
+        b = (i / 10) % 10;
+        c = i % 10;
+
+        if (a == b || a == c || b == c) {
+            printf("%d ", i);
+        }
+        i++;
+    } while (i <= 999);
+    printf("\n\n с циклом for:\n");
+    for (i = 100; i <= 999; i++) {
+        a = i / 100;
+        b = (i / 10) % 10;
+        c = i % 10;
+
+        if (a == b || a == c || b == c) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+    return 0;
+}
